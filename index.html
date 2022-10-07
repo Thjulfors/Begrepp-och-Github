@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Begrepp och gitHub</title>
+  </head>
+  <body>
+    <container class="main-container">
+      <header>
+        <h1>Begrepp och GitHub, 8 Yhp</h1>
+      </header>
+      <article>
+        <h2>Github flow</h2>
+        <p>
+          GitHub flow är ett branch baserat arbetsflöde för att säkerställa
+          kvalitet i din hantering av repot. Genom att du skapar en branch där
+          du kan addera ditt arbete utan att påverka standard branchen.
+          <br />
+          <br />
+        </p>
+        <ul id="flowList">
+          <li>
+            git clone (kopiera in koden från ditt repo på GitHub) -- klona ner
+            ditt repo lokalt
+          </li>
+          <li>
+            git checkout -b + "Namn på ny branch" -- skapa en ny branch
+            samtidigt som du byter till den
+          </li>
+          <li>
+            git add + "namn.txt" -- kommando för att välja ut vad som ska med +
+            namnet på filen du skapat i din nya branch
+          </li>
+          <li>
+            git commit -m "meddelande som beskriver branchen" -- Detta är en
+            ögonblicksbild av vad som adderats till branchen
+          </li>
+          <li>
+            git push -u origin + "namnet på din branch" -- Kommando för att
+            pusha upp den nya branchen till Github där vårt centrala repo ligger
+          </li>
+          <li>
+            Skapa en pull request -- En pull request ger andra projektmedlemmar
+            möjlighet att se dina ändringar tillägg av kod. Den ger även
+            möjlighet till feedback genom granskning.
+          </li>
+          <li>
+            Merge -- När din pull request har blivit godkänd kan du nu merga din
+            branch så den blir en del av den centrala som ligger på GitHub.
+            Förutsatt att den inte innehåller konflikter som måste lösas innan.
+          </li>
+          <li>
+            Delete your branch -- För att du inte av misstag ska jobba med en
+            gammal branch. Samt indikera att du nu är färdig med den.
+          </li>
+          <p>(GitHub Docs u.å.)</p>
+        </ul>
+        <h2>Flexbox</h2>
+        <p>
+          Flexbox är en endimensionell metod för styra din layout i rader och
+          kolumner. Det gör din design intuitivt responsiv. För att jobba med
+          flexbox behöver du skapa en container som innehåller element som
+          kallas för items. Med diverse egenskaper kan du sedan styra din
+          layout. Tex. display: flex; i din css-fil ger dig möjligheten att
+          jobba med de underliggande egenskaperna. Så som justify-content:
+          center; för att centera dina items horisontellt. (W3School,
+          mdn-mozilla u.å.)
+        </p>
+        <img src="flexbox.png" alt="En beskrivande bild av flexbox." />
+        <p>
+          (geeksforgeeks u.å. Introduction to CSS Flexbox - geeksforgeeks.org)
+        </p>
+        <br />
+        <br />
+        <h2>DOM(Document Object Model)</h2>
+        <p>
+          När en hemsida laddas skapar webläsaren en Document Object Model av
+          sidan. Det innebär att sidan konstrueras som ett träd av objekt.
+          Vilket ger oss möjligheten att med JavaScript skapa dynamisk HTML. Med
+          Javascript kan vi hämta och manipulera element i vår DOM. Exempelvis
+          kan vi hämta vår "h1" och ändra vår rubrik för sidan.
+        </p>
+        <img
+          src="pic_htmltree.gif"
+          alt="Illustration av DOM där vi ser trädet av objekt"
+        />
+        <p>
+          The HTML DOM Tree of Objects u.å.
+          https://www.w3schools.com/js/js_htmldom.asp
+        </p>
+        <h2>Fin kod</h2>
+        Med begreppet fin kod möjliggör vi inte bara för oss själva utan också
+        andra att enkelt kunna se vad vi menar med koden. Det innebär att den är
+        väl strukturerad. Kommenterad där så behövs, inte enbart för vår skull
+        utan också för nästa person som jobbar med vår kod. Utöver detta finns
+        ett begrepp som kallas för best practices. Det är i all sin enkelhet en
+        uppsättning rekommendationer att följa för en väl strukturerad kod. Det
+        ger vad man kallar för fin kod. (w3school, u.å.)
+        <br />
+        <br />
+        <h2>Ramverk</h2>
+        <p>
+          I ett ramverk är koden uppdelad i moduler som kan användas beroende på
+          vad vi vill åstadkomma. Det gör användandet av ett ramverk väldigt
+          enkelt då byggstenarna finns färdiga redan. Vi behöver bara kalla på
+          dem för att använda dem.(csharpskolan, 2018) Det kan liknas med en
+          förfabricerad takstol då vi ska bygga taket till vårt hus. <br />
+          <img src="ramverk.png" alt="Bild på en förfabricerad takstol" />
+          <br />
+          (Ramverk- Arlanda Snickerifabrik - u.å. arlandagarage.se)
+        </p>
+        <br />
+        <p>
+          Ett remverk som vi redan stött på i utbildningen är Bootstrap. Det är
+          väldigt populärt för HTML, CSS och JavaScript för att skapa responsiva
+          layouter i en mobile-first approach.(w3school, u.å.)
+        </p>
+        <br />
+        <p>
+          Ytterligare ett ramverk är Sass. Det är ett tillägg för CSS. Genom att
+          använda Sass kan vi reducera tiden vi lägger på CSS och därmed spara
+          tid. Med Sass får vi också möjlighet att använda verktyg som inte
+          finns tillgängliga i CSS. Som variabler exempelvis.
+        </p>
+        <br />
+        <br />
+      </article>
+      <footer>
+        <h3>Referenslista</h3>
+        <p>
+          GitHub, u.å. GitHub-Flow <br />
+          https://docs.github.com/en/get-started/quickstart/github-flow (Hämtad:
+          2022-10-07)
+        </p>
+        <br />
+        <p>
+          W3School, u.å. Flexbox <br />
+          https://www.w3schools.com/css/css3_flexbox.asp (Hämtad: 2022-10-07)
+        </p>
+        <br />
+        <p>
+          MDN Mozilla, u.å. Flexbox <br />
+          https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+          (Hämtad: 2022-10-07)
+        </p>
+        <br />
+        <p>
+          geeksforgeeks u.å. Introduction to CSS Flexbox[bild] <br />
+          geeksforgeeks.org (Hämtad 2022-10-07)
+        </p>
+        <br />
+        <p>
+          W3School, u.å. DOM <br />
+          https://www.w3schools.com/js/js_htmldom.asp (Hämtad: 2022-10-07)
+        </p>
+        <br />
+        <p>
+          The HTML DOM Tree of Objects u.å.[bild] <br />
+          https://www.w3schools.com/js/js_htmldom.asp (Hämtad: 2022-10-07)
+        </p>
+        <br />
+        <p>
+          W3School, u.å. Best Practices <br />
+          https://www.w3schools.com/js/js_best_practices.asp (Hämtad:
+          2022-10-07)
+        </p>
+        <br />
+        <p>
+          CSharpskolan, u.å. Introduktion till .net <br />
+          https://csharpskolan.se/article/introduktion-till-net/ (Hämtad:
+          2022-10-07)
+        </p>
+        <br />
+        <p>
+          W3School, u.å. Bootstrap <br />
+          https://www.w3schools.com/bootstrap/ (Hämtad: 2022-10-07)
+        </p>
+        <br />
+        <p>
+          W3School, u.å. Sass <br />
+          https://www.w3schools.com/sass/sass_intro.php (Hämtad: 2022-10-07)
+        </p>
+        <br />
+        <p>
+          Ramverk- Arlanda Snickerifabrik - u.å. [bild] <br />
+          arlandagarage.se (Hämtad: 2022-10-07)
+        </p>
+      </footer>
+    </container>
+  </body>
+</html>
